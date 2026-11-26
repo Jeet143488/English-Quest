@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Grammar Lab | English Quest</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/><link href="../css/style.css" rel="stylesheet"/></head><body class=""><nav class="navbar py-3">
+<div class="container d-flex flex-wrap align-items-center gap-3">
+<a class="d-flex align-items-center gap-2 me-auto" href="../index.html"><span class="brand-mark">EQ</span><span class="brand-name fs-5">English Quest</span></a>
+<div class="d-flex flex-wrap align-items-center gap-2">
+<a class="nav-link px-2" href="dashboard.html">Dashboard</a>
+<a class="nav-link px-2" href="progress.html">Progress</a>
+<a class="nav-link px-2" href="daily-challenge.html">Challenge</a>
+<a class="btn btn-outline-primary btn-sm" href="../index.html"><i class="bi bi-box-arrow-left me-1"></i>Logout</a>
+</div></div></nav>
+<main class="container py-5">
+  <div class="row g-4 align-items-center mb-5">
+    <div class="col-lg-7">
+      <span class="badge-soft">Grammar Lab • Beginner</span>
+      <h1 class="section-title display-5 mt-3">Build stronger grammar, one question at a time.</h1>
+      <p class="muted fs-5">Practice tenses, articles, adjectives and basic sentence rules with a short quiz.</p>
+    </div>
+    <div class="col-lg-5"><img alt="Grammar practice" class="img-fluid rounded-4" src="../images/grammar.svg"/></div>
+  </div>
+  
+<div class="panel p-4 p-lg-5 quiz-panel" data-quiz="grammar">
+  <div id="quizProgressArea">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge-soft" id="progressText">Question 1 of 5</span>
+      <span class="muted small" id="questionCount">5 questions</span>
+    </div>
+    <div class="progress mb-4" role="progressbar" aria-label="Quiz progress">
+      <div class="progress-bar" id="progressBar" style="width:20%"></div>
+    </div>
+  </div>
+  <h3 class="mb-4" id="question">Question will appear here</h3>
+  <div class="row g-3" id="options"></div>
+  <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-4" id="quizControls">
+    <a class="btn btn-outline-primary" href="dashboard.html">Back to dashboard</a>
+    <button class="btn btn-primary" id="nextBtn" type="button">Next <i class="bi bi-arrow-right"></i></button>
+  </div>
+  <div id="result" class="text-center py-3" hidden></div>
+</div>
+
+  <div class="row g-3 mt-4">
+    <div class="col-md-6"><div class="panel p-3"><strong>Grammar tip</strong><p class="muted mb-0 mt-1">In the simple present tense, he, she and it usually take a verb ending in -s or -es.</p></div></div>
+    <div class="col-md-6"><div class="panel p-3"><strong>How it works</strong><p class="muted mb-0 mt-1">Choose one option and press Next. Your result appears after the final question.</p></div></div>
+  </div>
+</main><footer class="footer mt-5 py-4"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>English Quest • Learn a little, use it a lot.</span><span>Learn. Practice. Improve. Communicate with Confidence.</span></div></footer><script src="../js/app.js"></script>
+</body></html>
